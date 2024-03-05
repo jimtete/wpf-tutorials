@@ -1,14 +1,6 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Microsoft.Win32;
+﻿using System.Windows;
+using WinForms = System.Windows.Forms;
+
 
 namespace WPFTutorial;
 
@@ -24,18 +16,14 @@ public partial class MainWindow : Window
 
     private void BtnFire_OnClick(object sender, RoutedEventArgs e)
     {
-        var fileDialog = new OpenFileDialog();
-        fileDialog.Filter = "C# Source Files | *.cs";
-        fileDialog.Multiselect = true;
-        
-        var success = fileDialog.ShowDialog();
+        var dialog = new FolderBrowserDialog();
+        dialog.InitialDirectory =
+            "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\";
+        var dialogResult = dialog.ShowDialog();
 
-        if (success.HasValue && success.Value)
+        if (dialogResult == WinForms.DialogResult.OK)
         {
-            var path = fileDialog.FileNames;
-            var fileName = fileDialog.SafeFileNames;
-            
-            tbInfo.Text = fileName[1];
+            //Do something
         }
     }
 }

@@ -10,6 +10,6 @@
         <TextBlock Name="tbHello" Text="Hello World" FontSize="50"></TextBlock>
         <Button Name="btnRun" Width="100" Height="50" 
                 VerticalAlignment="Center" HorizontalAlignment="Center" 
-                Content="RUN!"></Button>
+                Content="RUN!" FontSize="20"></Button>
     </Grid>
 </Window>

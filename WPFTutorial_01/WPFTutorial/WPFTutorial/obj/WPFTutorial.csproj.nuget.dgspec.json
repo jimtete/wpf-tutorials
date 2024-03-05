@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\1. WPFTutorial\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj": {}
+    "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\1. WPFTutorial\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj": {
+    "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\1. WPFTutorial\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj",
+        "projectUniqueName": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj",
         "projectName": "WPFTutorial",
-        "projectPath": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\1. WPFTutorial\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj",
+        "projectPath": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\WPFTutorial.csproj",
         "packagesPath": "C:\\Users\\jim-t\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\1. WPFTutorial\\WPFTutorial\\WPFTutorial\\obj\\",
+        "outputPath": "C:\\Users\\jim-t\\GitHub\\wpf-tutorials\\WPFTutorial_01\\WPFTutorial\\WPFTutorial\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jim-t\\AppData\\Roaming\\NuGet\\NuGet.Config"

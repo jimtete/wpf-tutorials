@@ -1,14 +1,4 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Microsoft.Win32;
+﻿using System.Windows;
 
 namespace WPFTutorial;
 
@@ -20,22 +10,25 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        lvEntries.Items.Add("a");
+        lvEntries.Items.Add("b");
+        lvEntries.Items.Add("c");
     }
 
-    private void BtnFire_OnClick(object sender, RoutedEventArgs e)
+    private void BtnAdd_OnClick(object sender, RoutedEventArgs e)
     {
-        var fileDialog = new OpenFileDialog();
-        fileDialog.Filter = "C# Source Files | *.cs";
-        fileDialog.Multiselect = true;
-        
-        var success = fileDialog.ShowDialog();
+        lvEntries.Items.Add(txtEntry.Text);
+        txtEntry.Clear();
+    }
 
-        if (success.HasValue && success.Value)
-        {
-            var path = fileDialog.FileNames;
-            var fileName = fileDialog.SafeFileNames;
-            
-            tbInfo.Text = fileName[1];
-        }
+    private void BtnDelete_OnClick(object sender, RoutedEventArgs e)
+    {
+        var index = lvEntries.SelectedIndex;
+        lvEntries.Items.RemoveAt(index);
+    }
+
+    private void BtnClear_OnClick(object sender, RoutedEventArgs e)
+    {
+        lvEntries.Items.Clear();
     }
 }

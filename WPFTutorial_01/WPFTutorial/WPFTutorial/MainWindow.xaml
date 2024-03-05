@@ -3,13 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock Name="tbHello" Text="Hello World" FontSize="50"></TextBlock>
-        <Button Name="btnRun" Width="100" Height="50" 
-                VerticalAlignment="Center" HorizontalAlignment="Center" 
-                Content="RUN!" FontSize="20"></Button>
-    </Grid>
+        Title="MainWindow" Height="400" Width="300">
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox Name="txtInput" VerticalContentAlignment="Center" Width="250" Height="40"
+                         FontSize="16" Text="{Binding BoundText, UpdateSourceTrigger=PropertyChanged, 
+                         Mode=OneWayToSource}"></TextBox>
+                <Button Grid.Row="1" Name="btnSet" Content="Set" Width="100" Height="40"
+                        Click="BtnSet_OnClick"></Button>
+                <TextBlock Grid.Row="2" Name="tbResult" FontSize="16" Text="{Binding BoundText, Mode=OneWay}"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </Grid>
 </Window>

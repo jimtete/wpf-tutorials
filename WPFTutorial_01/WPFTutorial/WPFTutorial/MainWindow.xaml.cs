@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,12 +16,34 @@ namespace WPFTutorial;
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MainWindow : Window
+public partial class MainWindow : Window, INotifyPropertyChanged
 {
+    public event PropertyChangedEventHandler? PropertyChanged;
+
     public MainWindow()
     {
+        DataContext = this;
         InitializeComponent();
+    }
+    private string _boundText;
 
-        tbHello.Text = "Hello world 2";
+    public string BoundText
+    {
+        get => _boundText;
+        set
+        {
+            _boundText = value;
+            OnPropertyChanged();
+        }
+    }
+
+    private void BtnSet_OnClick(object sender, RoutedEventArgs e)
+    {
+        BoundText = "set from code!";
+    }
+
+    private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

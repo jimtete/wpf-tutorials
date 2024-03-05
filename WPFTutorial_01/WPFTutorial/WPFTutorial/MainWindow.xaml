@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Name="tbHello" Text="Hello World" FontSize="50"></TextBlock>
-        <Button Name="btnRun" Width="100" Height="50" 
-                VerticalAlignment="Center" HorizontalAlignment="Center" 
-                Content="RUN!" FontSize="20"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Name="btnFire" Content="Fire" Width="100" Height="40"
+                Click="BtnFire_OnClick"/>
+        <TextBlock Grid.Row="1" Name="tbInfo" FontSize="16" VerticalAlignment="Center"
+                   HorizontalAlignment="Center"></TextBlock>
     </Grid>
 </Window>

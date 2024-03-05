@@ -19,7 +19,20 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+    }
 
-        tbHello.Text = "Hello world 2";
+    private void BtnFire_OnClick(object sender, RoutedEventArgs e)
+    {
+        var result = MessageBox.Show("Do you agree?", "Agreement",
+            MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+        if (result == MessageBoxResult.Yes)
+        {
+            tbInfo.Text = "Agreed!";
+        }
+        else
+        {
+            tbInfo.Text = "Not Agreed";
+        }
     }
 }

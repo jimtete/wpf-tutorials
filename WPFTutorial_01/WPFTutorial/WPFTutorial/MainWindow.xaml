@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450">
+        Title="MainWindow" Height="350" Width="300">
     <Grid>
-        
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+                <TextBox Width="150" Height="30" Margin="10"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

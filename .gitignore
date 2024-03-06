@@ -1,3 +1,5 @@
-WPFTutorial_01/WPFTutorial/WPFTutorial/bin/Debug/
-WPFTutorial_01\WPFTutorial\WPFTutorial\bin\Debug\
-*.exe
+WPFTutorial_01/WPFTutorial/WPFTutorial/bin/
+WPFTutorial_01/WPFTutorial/WPFTutorial/bin/Debug/net8.0-windows/WPFTutorial.deps.json
+WPFTutorial_01/WPFTutorial/WPFTutorial/bin/Debug/net8.0-windows/WPFTutorial.exe
+WPFTutorial_01/WPFTutorial/WPFTutorial/obj/
+WPFTutorial_01/WPFTutorial/WPFTutorial/obj/Debug/

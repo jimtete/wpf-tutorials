@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace WPFTutorial;
@@ -10,35 +10,33 @@ public partial class MainWindow : Window
 {
     public MainWindow()
     {
+        DataContext = this;
+        _entries = new ObservableCollection<string>();
+
         InitializeComponent();
-        lvEntries.Items.Add("a");
-        lvEntries.Items.Add("b");
-        lvEntries.Items.Add("c");
+    }
+
+    private ObservableCollection<string> _entries;
+
+    public ObservableCollection<string> Entries
+    {
+        get { return _entries; }
+        set { _entries = value; }
     }
 
     private void BtnAdd_OnClick(object sender, RoutedEventArgs e)
     {
-        lvEntries.Items.Add(txtEntry.Text);
-        txtEntry.Clear();
+        _entries.Add(txtEntry.Text);
     }
 
     private void BtnDelete_OnClick(object sender, RoutedEventArgs e)
     {
-        var items = lvEntries.SelectedItems;
-        
-        var result = MessageBox.Show($"Are you sure you want to delete {items.Count} items.", "Sure?", MessageBoxButton.YesNo);
-        if (result == MessageBoxResult.Yes)
-        {
-            var itemsList = new ArrayList(items);
-            foreach (var item in itemsList)
-            {
-                lvEntries.Items.Remove(item);
-            }
-        }
+        var selectedItem = (string)lvEntries.SelectedItem;
+        _entries.Remove(selectedItem);
     }
 
     private void BtnClear_OnClick(object sender, RoutedEventArgs e)
     {
-        lvEntries.Items.Clear();
+        _entries.Clear();
     }
 }

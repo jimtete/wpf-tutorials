@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections;
+using System.Windows;
 
 namespace WPFTutorial;
 
@@ -23,8 +24,17 @@ public partial class MainWindow : Window
 
     private void BtnDelete_OnClick(object sender, RoutedEventArgs e)
     {
-        var index = lvEntries.SelectedIndex;
-        lvEntries.Items.RemoveAt(index);
+        var items = lvEntries.SelectedItems;
+        
+        var result = MessageBox.Show($"Are you sure you want to delete {items.Count} items.", "Sure?", MessageBoxButton.YesNo);
+        if (result == MessageBoxResult.Yes)
+        {
+            var itemsList = new ArrayList(items);
+            foreach (var item in itemsList)
+            {
+                lvEntries.Items.Remove(item);
+            }
+        }
     }
 
     private void BtnClear_OnClick(object sender, RoutedEventArgs e)

@@ -22,6 +22,6 @@
                 Margin="60,0,0,0" Click="BtnDelete_OnClick"/>
         <Button Grid.Column="1" Name="btnClear" Width="50" Content="Clear" HorizontalAlignment="Left"
                 Margin="120,0,0,0" Click="BtnClear_OnClick"/>
-        <ListView Name="lvEntries" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="Single"></ListView>
+        <ListView Name="lvEntries" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="Extended"></ListView>
     </Grid>
 </Window>

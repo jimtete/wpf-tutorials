@@ -7,20 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="300">
     <Grid>
-        <ScrollViewer HorizontalScrollBarVisibility="Auto"
-                      VerticalScrollBarVisibility="Auto">
-            <StackPanel>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-                <TextBox Width="150" Height="30" Margin="10"/>
-            </StackPanel>
-        </ScrollViewer>
+        <StackPanel>
+            <Button Name="btnNormal" Width="100" Height="40" Content="Normal" Margin="5"
+                    Click="BtnNormal_OnClick"/>
+            <Button Name="btnModal" Width="100" Height="40" Content="Modal" Margin="5"
+                    Click="BtnModal_OnClick"/>
+            <TextBox Name="txtInput" Width="200" Height="40" FontSize="20"></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

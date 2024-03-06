@@ -47,7 +47,6 @@ C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\bin\D
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial_MarkupCompile.cache
-C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial_MarkupCompile.lref
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial.g.resources
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial.GeneratedMSBuildEditorConfig.editorconfig

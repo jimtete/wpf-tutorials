@@ -8,26 +8,28 @@
         Title="MainWindow" Height="400" Width="400">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
+            <RowDefinition Height="50"/>
             <RowDefinition/>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Height="40" Width="75" Margin="2" Content="A"></Button>
-            <Button Height="40" Width="75" Margin="2" Content="B"></Button>
-            <Button Height="40" Width="75" Margin="2" Content="C"></Button>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Margin="20" HorizontalAlignment="Center">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label Content="Label: "/>
-                <TextBox Width="150"/>
-                <Button Content="Go"/>
-            </StackPanel>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
-        </StackPanel>
+        
+        <Rectangle Fill="Red"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="Green"/>
+            <GridSplitter Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <Rectangle Grid.Column="2" Fill="Yellow"/>
+            <GridSplitter Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <Rectangle Grid.Column="4" Fill="Orange"/>
+        </Grid>
+        <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch"></GridSplitter>
+        <Rectangle Grid.Row="3" Fill="Blue"/>
     </Grid>
 </Window>

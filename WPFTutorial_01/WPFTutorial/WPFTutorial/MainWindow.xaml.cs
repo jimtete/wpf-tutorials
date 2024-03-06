@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WPFTutorial;
 
@@ -11,5 +10,10 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+    }
+
+    private void BtnDetails_OnClick(object sender, RoutedEventArgs e)
+    {
+        expanderDetails.IsExpanded = !expanderDetails.IsExpanded;
     }
 }

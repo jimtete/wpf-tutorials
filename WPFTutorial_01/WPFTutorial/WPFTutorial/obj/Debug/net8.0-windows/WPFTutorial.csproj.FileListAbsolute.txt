@@ -60,7 +60,6 @@ C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\D
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial.pdb
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\WPFTutorial.genruntimeconfig.cache
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\ref\WPFTutorial.dll
-C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\View\ModalWindow.g.cs
-C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\View\NormalWindow.g.cs
-C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\View\ModalWindow.baml
-C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\View\NormalWindow.baml
+C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\Styles\ButtonStyles.baml
+C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\Styles\TextBoxStyles.baml
+C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\obj\Debug\net8.0-windows\App.baml

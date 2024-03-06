@@ -5,23 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBox Name="txtEntry" Height="35" FontSize="16"/>
-        <Button Grid.Column="1" Name="btnAdd" Width="50" Content="Add" Click="BtnAdd_OnClick"
-                HorizontalAlignment="Left"/>
-        <Button Grid.Column="1" Name="btnDelete" Width="50" Content="Delete" HorizontalAlignment="Left"
-                Margin="60,0,0,0" Click="BtnDelete_OnClick"/>
-        <Button Grid.Column="1" Name="btnClear" Width="50" Content="Clear" HorizontalAlignment="Left"
-                Margin="120,0,0,0" Click="BtnClear_OnClick"/>
-        <ListView Name="lvEntries" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="Extended"></ListView>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="40" Width="75" Margin="2" Content="A"></Button>
+            <Button Height="40" Width="75" Margin="2" Content="B"></Button>
+            <Button Height="40" Width="75" Margin="2" Content="C"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="20" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="Label: "/>
+                <TextBox Width="150"/>
+                <Button Content="Go"/>
+            </StackPanel>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+            <TextBox Height="30" Width="150" Margin="2" FontSize="16"></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

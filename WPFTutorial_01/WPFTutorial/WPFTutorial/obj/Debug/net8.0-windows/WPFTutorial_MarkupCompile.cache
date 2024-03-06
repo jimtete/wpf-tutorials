@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\jim-t\GitHub\wpf-tutorials\WPFTutorial_01\WPFTutorial\WPFTutorial\App.xaml
-3454880409
+11407045341
 
-6-184328928
+4-1908909532
 1981616452897
-MainWindow.xaml;View\ModalWindow.xaml;View\NormalWindow.xaml;
+MainWindow.xaml;
 
-False
+True
 

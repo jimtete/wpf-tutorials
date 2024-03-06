@@ -6,13 +6,5 @@
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="300">
-    <Grid>
-        <StackPanel>
-            <Button Name="btnNormal" Width="100" Height="40" Content="Normal" Margin="5"
-                    Click="BtnNormal_OnClick"/>
-            <Button Name="btnModal" Width="100" Height="40" Content="Modal" Margin="5"
-                    Click="BtnModal_OnClick"/>
-            <TextBox Name="txtInput" Width="200" Height="40" FontSize="20"></TextBox>
-        </StackPanel>
-    </Grid>
+    <Grid></Grid>
 </Window>
